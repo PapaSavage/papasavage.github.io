@@ -132,119 +132,11 @@
             <div class="flex flex-col h-full">
                 <div id="reviews"
                     class="py-[24px] my-[36px] text-[40px] text-center font-bold sticky top-0 overflow-hidden z-10 backdrop-blur-md">REVIEWS</div>
-                <div
+                <div id="reviews-container"
                     class="flex-1 flex justify-center items-center px-[20px] xl:px-[60px]">
                     <div
                         class="grid grid-cols-2 xl:grid-cols-3 gap-[16px] justify-items-center w-full">
-                        <div
-                            class="easy-in-out p-[15px] flex flex-col text-wrap duration-300 transition rounded-[12px] bg-black/5 border hover:bg-black/10 hover:shadow-2xl">
-                            <div class="flex flex-row gap-[15px] items-center">
-                                <img class src="img/reviewphoto.svg">
-                                <div
-                                    class="text-[18px] xl:text-[24px] font-semibold">Danil
-                                    Falaleev</div>
-                            </div>
-                            <div class="text-[14px] xl:text-ellipsis m-3">Мы
-                                были впечатлены качеством и скоростью работы над
-                                нашим интернет-магазином. Приложение работает
-                                без сбоев, и пользовательский интерфейс очень
-                                удобен. </div>
-                        </div>
-                        <div
-                            class="easy-in-out p-[15px] flex flex-col text-wrap duration-300 transition rounded-[12px] bg-black/5 border hover:bg-black/10 hover:shadow-2xl">
-                            <div
-                                class="flex flex-row[15px] gap-[15px] items-center">
-                                <img class src="img/reviewphoto.svg">
-                                <div class="text-[24px] font-semibold">Danil
-                                    Falaleev</div>
-                            </div>
-                            <div class="text-[14px] xl:text-ellipsis m-3 ">Lorem
-                                ipsum
-                                dolor sit
-                                amet
-                                consectetur
-                                adipisicing elit. Deleniti, ab quo, cupiditate
-                                dolorem nesciunt, quidem repudiandae ipsam nobis
-                                accusamus animi nam alias porro officiis
-                                voluptatum perspiciatis quod eum ut
-                                pariatur!</div>
-                        </div>
-                        <div
-                            class="easy-in-out p-[15px] flex flex-col text-wrap duration-300 transition rounded-[12px] bg-black/5 border hover:bg-black/10 hover:shadow-2xl">
-                            <div
-                                class="flex flex-row[15px] gap-[15px] items-center">
-                                <img class src="img/reviewphoto.svg">
-                                <div class="text-[24px] font-semibold">Danil
-                                    Falaleev</div>
-                            </div>
-                            <div class="text-[14px] xl:text-ellipsis m-3">Lorem
-                                ipsum
-                                dolor sit
-                                amet
-                                consectetur
-                                adipisicing elit. Deleniti, ab quo, cupiditate
-                                dolorem nesciunt, quidem repudiandae ipsam nobis
-                                accusamus animi nam alias porro officiis
-                                voluptatum perspiciatis quod eum ut
-                                pariatur!</div>
-                        </div>
-                        <div
-                            class="easy-in-out p-[15px] flex flex-col text-wrap duration-300 transition rounded-[12px] bg-black/5 border hover:bg-black/10 hover:shadow-2xl">
-                            <div
-                                class="flex flex-row[15px] gap-[15px] items-center">
-                                <img class src="img/reviewphoto.svg">
-                                <div class="text-[24px] font-semibold">Danil
-                                    Falaleev</div>
-                            </div>
-                            <div class="text-[14px] xl:text-ellipsis m-3">Lorem
-                                ipsum
-                                dolor sit
-                                amet
-                                consectetur
-                                adipisicing elit. Deleniti, ab quo, cupiditate
-                                dolorem nesciunt, quidem repudiandae ipsam nobis
-                                accusamus animi nam alias porro officiis
-                                voluptatum perspiciatis quod eum ut
-                                pariatur!</div>
-                        </div>
-                        <div
-                            class="easy-in-out p-[15px] flex flex-col text-wrap duration-300 transition rounded-[12px] bg-black/5 border hover:bg-black/10 hover:shadow-2xl">
-                            <div
-                                class="flex flex-row[15px] gap-[15px] items-center">
-                                <img class src="img/reviewphoto.svg">
-                                <div class="text-[24px] font-semibold">Danil
-                                    Falaleev</div>
-                            </div>
-                            <div class="text-[14px] xl:text-ellipsis m-3">Lorem
-                                ipsum
-                                dolor sit
-                                amet
-                                consectetur
-                                adipisicing elit. Deleniti, ab quo, cupiditate
-                                dolorem nesciunt, quidem repudiandae ipsam nobis
-                                accusamus animi nam alias porro officiis
-                                voluptatum perspiciatis quod eum ut
-                                pariatur!</div>
-                        </div>
-                        <div
-                            class="easy-in-out p-[15px] flex flex-col text-wrap duration-300 transition rounded-[12px] bg-black/5 border hover:bg-black/10 hover:shadow-2xl">
-                            <div
-                                class="flex flex-row[15px] gap-[15px] items-center">
-                                <img class src="img/reviewphoto.svg">
-                                <div class="text-[24px] font-semibold">Danil
-                                    Falaleev</div>
-                            </div>
-                            <div class="text-[14px] xl:text-ellipsis m-3">Lorem
-                                ipsum
-                                dolor sit
-                                amet
-                                consectetur
-                                adipisicing elit. Deleniti, ab quo, cupiditate
-                                dolorem nesciunt, quidem repudiandae ipsam nobis
-                                accusamus animi nam alias porro officiis
-                                voluptatum perspiciatis quod eum ut
-                                pariatur!</div>
-                        </div>
+                        <!-- Reviews will be populated here -->
                     </div>
                 </div>
             </div>
@@ -328,6 +220,42 @@
             </div>
 
         </div>
+        <script>
+    // Fetch reviews from the API
+    fetch('http://127.0.0.1:8000/reviews')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`Response status: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            const reviewsContainer = document.querySelector('#reviews-container'); // Container for reviews
+            const reviewsGrid = reviewsContainer.querySelector('.grid'); // Grid inside the container
+
+            // Clear the container before adding new reviews
+            reviewsGrid.innerHTML = '';
+
+            for (i=0; i< 6; i++) {
+                data.results.forEach(review => {
+                    const reviewElement = document.createElement('div');
+                    reviewElement.classList.add('easy-in-out', 'p-[15px]', 'flex', 'flex-col', 'text-wrap', 'duration-300', 'transition', 'rounded-[12px]', 'bg-black/5', 'border', 'hover:bg-black/10', 'hover:shadow-2xl');
+    
+                    reviewElement.innerHTML = `
+                        <div class="flex flex-row gap-[15px] items-center">
+                            <img class="w-[32px] h-[32px]" src="${review.photo_path}" alt="Review photo">
+                            <div class="text-[18px] xl:text-[24px] font-semibold">${review.author_name}</div>
+                        </div>
+                        <div class="text-[14px] xl:text-ellipsis m-3">${review.description}</div>
+                    `;
+    
+                    reviewsGrid.appendChild(reviewElement);
+                });
+            }
+
+        })
+        .catch(error => console.error('Error:', error));
+</script>
 
     </body>
 
