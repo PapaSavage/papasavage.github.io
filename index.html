@@ -21,7 +21,8 @@
                     <a href="#about">About me</a>
                     <a href="#contact">Contact me</a>
                 </div>
-                <div class=" flex flex-col justify-center items-center ">
+                <div
+                    class=" flex flex-col justify-center items-center my-3 sm:my-0">
                     <div
                         class="flex flex-col xl:flex-row items-center gap-[32px] xl:gap-[65px]">
                         <img class="h-48 xl:h-64 easy-in-out"
@@ -32,12 +33,18 @@
                                 <div class="text-[24px] xl:text-[40px]">Данил
                                     Фалалеев</div>
                                 <div
-                                    class=" font-bold text-[24px] xl:text-[40px] text-poppins">Fullstack
+                                    class="font-bold text-[24px] xl:text-[40px] text-poppins">Fullstack
                                     Developer</div>
                             </div>
-                            <button
-                                class="px-[64px]  text-white bg-black py-[4px] xl:py-[8px] rounded-[50px] text-[20px] font-bold xl:self-end hover:text-black hover:bg-transparent transition duration-300 flex flex-row border-black border-2 justify-center items-center shadow-2xl easy-in-out">Заказать
-                                сайт</button>
+                            <!-- <button href="#contact"
+                                class=" px-[64px] text-white bg-black py-[4px]
+                                xl:py-[8px] rounded-[50px] text-[20px] font-bold
+                                xl:self-end hover:text-black
+                                hover:bg-transparent transition duration-300
+                                flex flex-row border-black border-2
+                                justify-center items-center shadow-2xl
+                                easy-in-out">Заказать
+                                сайт</button> -->
                         </div>
                     </div>
                 </div>
@@ -48,7 +55,7 @@
                         class="max-w-[1000px] mx-auto grid grid-cols-3 xl:grid-cols-5 grid-rows-2 gap-[24px] px-10">
                         <div
                             class="py-3 rounded-[10px] hidden xl:flex flex-col justify-center items-center shadow-2xl hover:border-transparent hover:bg-[#F2F2F2] transition duration-300 cursor-pointer easy-in-out">
-                            <img class="w-[75px] h-[75px]" src="img/css.png">
+                            <img class="w-[75px] h-[75px]" src="img/html.png">
                             <div class="font-bold text-[20px]">HTML</div>
                         </div>
                         <div
@@ -74,27 +81,29 @@
                         <div
                             class="py-3 rounded-[10px] flex flex-col justify-center items-center shadow-2xl hover:border-transparent hover:bg-[#F2F2F2] transition duration-300 cursor-pointer easy-in-out">
                             <img class="w-[75px] h-[75px]" src="img/css.png">
-                            <div class="font-bold text-[20px]">HTML</div>
+                            <div class="font-bold text-[20px]">CSS</div>
                         </div>
                         <div
                             class="py-3 rounded-[10px] flex flex-col justify-center items-center shadow-2xl hover:border-transparent hover:bg-[#F2F2F2] transition duration-300 cursor-pointer easy-in-out">
-                            <img class="w-[75px] h-[75px]" src="img/nuxt.png">
-                            <div class="font-bold text-[20px]">NUXT</div>
+                            <img class="w-[75px] h-[75px]"
+                                src="img/bootstrap.png">
+                            <div class="font-bold text-[20px]">BOOTSTRAP</div>
                         </div>
                         <div
                             class="py-3 rounded-[10px] flex flex-col justify-center items-center shadow-2xl hover:border-transparent hover:bg-[#F2F2F2] transition duration-300 cursor-pointer easy-in-out">
-                            <img class="w-[75px] h-[75px]" src="img/php.png">
-                            <div class="font-bold text-[20px]">PHP</div>
+                            <img class="w-[75px] h-[75px]"
+                                src="img/javascript.png">
+                            <div class="font-bold text-[20px]">JS</div>
                         </div>
                         <div
                             class="py-3 rounded-[10px] flex flex-col justify-center items-center shadow-2xl hover:border-transparent hover:bg-[#F2F2F2] transition duration-300 cursor-pointer easy-in-out">
-                            <img class="w-[75px] h-[75px]" src="img/vue.png">
-                            <div class="font-bold text-[20px]">VUE</div>
+                            <img class="w-[75px] h-[75px]" src="img/nodejs.png">
+                            <div class="font-bold text-[20px]">NODEJS</div>
                         </div>
                         <div
                             class="py-3 rounded-[10px] flex flex-col justify-center items-center shadow-2xl hover:border-transparent hover:bg-[#F2F2F2] transition duration-300 cursor-pointer easy-in-out">
-                            <img class="w-[75px] h-[75px]" src="img/github.png">
-                            <div class="font-bold text-[20px]">GITHUB</div>
+                            <img class="w-[75px] h-[75px]" src="img/python.png">
+                            <div class="font-bold text-[20px]">PYTHON</div>
                         </div>
 
                     </div>
@@ -104,7 +113,7 @@
                 <div id="projects"
                     class="py-[24px] my-[36px] text-[40px] text-center font-bold sticky top-0 overflow-hidden z-10 backdrop-blur-md">LATEST
                     WORK</div>
-                <div class="flex flex-col gap-[32px] relative">
+                <div class="flex flex-col gap-[32px] relative pb-6">
                     <a href="https://github.com/PapaSavage/gym" target="_blank"
                         class="flex-1 flex flex-col justify-center items-center easy-in-out sticky top-0">
                         <div class=" flex flex-col shadow-2xl rounded-[20px]">
@@ -135,7 +144,7 @@
                 <div id="reviews-container"
                     class="flex-1 flex justify-center items-center px-[20px] xl:px-[60px]">
                     <div
-                        class="grid grid-cols-2 xl:grid-cols-3 gap-[16px] justify-items-center w-full">
+                        class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-[16px] justify-items-center w-full">
                         <!-- Reviews will be populated here -->
                     </div>
                 </div>
@@ -144,7 +153,7 @@
                 <div id="about"
                     class="py-[24px] my-[36px] text-[40px] text-center font-bold sticky top-0 overflow-hidden z-10 backdrop-blur-md">ABOUT
                     ME</div>
-                <div class="flex-1 px-[60px] xl:px-[177px]">
+                <div class="flex-1 px-[20px] sm:px-[60px] xl:px-[177px]">
                     <div
                         class="flex flex-col xl:flex-row items-center gap-[16px]">
                         <img class="easy-in-out xl:px-0"
@@ -156,12 +165,13 @@
                                     <div class="flex flex-col items-center ">
                                         <img class="h-[32px] w-[32px]"
                                             src="img/reward.png" alt>
-                                        <div class="text-[20px] font-semibold "
+                                        <div
+                                            class="text-[20px] font-semibold"
                                             ">Опыт</div>
                                         <div class>2+
                                             years</div>
                                         <div
-                                            class>FullStack
+                                            class="text-center">FullStack
                                             development</div>
                                     </div>
 
@@ -175,7 +185,7 @@
                                             src="img/peoples.png" alt>
                                         <div
                                             class="text-[20px] font-semibold">Обучение</div>
-                                        <div class>Колледж
+                                        <div class="text-center">Колледж
                                             ВятГУ</div>
                                     </div>
 
@@ -205,7 +215,7 @@
                     class="py-[24px] my-[36px] text-[40px] text-center font-bold sticky top-0 overflow-hidden z-10 backdrop-blur-md">Looking
                     for a Web Developer?</div>
                 <div
-                    class="flex flex-row justify-center gap-[10px] text-[22px] font-bold">
+                    class="flex flex-row flex-wrap justify-center gap-[10px] text-[22px] font-bold">
                     <a href="https://t.me/DanilFalaleev" target="_blank"
                         class="easy-in-out shadow-2xl transition duration-300 rounded-[50px] py-[12px] px-[25px] border-2 border-black hover:text-white hover:border-transparent hover:bg-[#039BE5]">telegram</a>
                     <a href="https://vk.com/unbbelievable" target="_blank"
@@ -236,14 +246,14 @@
             // Clear the container before adding new reviews
             reviewsGrid.innerHTML = '';
 
-            for (i=0; i< 6; i++) {
+            for (i=0; i< 1; i++) {
                 data.results.forEach(review => {
                     const reviewElement = document.createElement('div');
-                    reviewElement.classList.add('easy-in-out', 'p-[15px]', 'flex', 'flex-col', 'text-wrap', 'duration-300', 'transition', 'rounded-[12px]', 'bg-black/5', 'border', 'hover:bg-black/10', 'hover:shadow-2xl');
+                    reviewElement.classList.add('easy-in-out', 'p-[2px]', 'sm:p-[15px]', 'flex', 'flex-col', 'text-wrap', 'duration-300', 'transition', 'rounded-[12px]', 'bg-black/5', 'border', 'hover:bg-black/10', 'hover:shadow-2xl');
     
                     reviewElement.innerHTML = `
-                        <div class="flex flex-row gap-[15px] items-center">
-                            <img class="w-[32px] h-[32px]" src="${review.photo_path}" alt="Review photo">
+                        <div class="flex flex-row gap-[15px] items-center px-[10px] pt-[10px] sm:p-0">
+                            <img class="w-[48px] h-[48px] rounded-full" src="${review.photo_path}" alt="Review photo">
                             <div class="text-[18px] xl:text-[24px] font-semibold">${review.author_name}</div>
                         </div>
                         <div class="text-[14px] xl:text-ellipsis m-3">${review.description}</div>
