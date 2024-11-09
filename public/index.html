@@ -29,8 +29,8 @@
                     class=" flex flex-col justify-center items-center my-3 sm:my-0">
                     <div
                         class="flex flex-col xl:flex-row items-center gap-[32px] xl:gap-[65px]">
-                        <img class="h-48 xl:h-64 easy-in-out rounded-full"
-                            src="img/PROFILEabout.png" alt>
+                        <img class="h-48 xl:h-64 easy-in-out"
+                            src="img/mainphoto.png" alt>
                         <div class="flex flex-col gap-4">
                             <div
                                 class="flex flex-col text-center xl:text-start">
@@ -236,7 +236,7 @@
         </div>
         <script>
     // Fetch reviews from the API
-    fetch('https://localhost:8000/reviews')
+    fetch('http://127.0.0.1:8000/reviews')
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Response status: ${response.status}`);
