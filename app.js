@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
     res.sendfile('public/index.html');
 })
 
-app.get('artem', (req, res) => {
+app.get('/artem', (req, res) => {
     res.sendfile('public/artem.html');
 })
 
