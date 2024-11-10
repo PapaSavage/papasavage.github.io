@@ -8,6 +8,10 @@ app.get('/', (req, res) => {
     res.sendfile('public/index.html');
 })
 
+app.get('artem', (req, res) => {
+    res.sendfile('public/artem.html');
+})
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })
