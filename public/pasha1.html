@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Павел Суслов - Портфолио</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="flex flex-col items-center min-h-screen bg-gray-100 text-gray-800">
+    <header class="w-full bg-gray-800 p-4 fixed top-0 z-10">
+        <nav>
+            <ul class="flex justify-center space-x-6">
+                <li><a href="#about" class="text-white hover:bg-gray-700 p-2 rounded">Обо мне</a></li>
+                <li><a href="#projects" class="text-white hover:bg-gray-700 p-2 rounded">Мои проекты</a></li>
+                <li><a href="#technologies" class="text-white hover:bg-gray-700 p-2 rounded">Технологии</a></li>
+                <li><a href="#reviews" class="text-white hover:bg-gray-700 p-2 rounded">Отзывы</a></li>
+                <li><a href="#contacts" class="text-white hover:bg-gray-700 p-2 rounded">Контакты</a></li>
+            </ul>
+        </nav>
+        <button class="absolute top-4 right-4 text-white bg-gray-700 p-2 rounded" id="boredButton">Скучно?</button>
+    </header>
+
+    <div class="game-modal fixed top-5 right-5 bg-white w-72 h-96 rounded-lg shadow-lg hidden p-2 z-20 overflow-hidden"
+        id="gameModal">
+        <button class="absolute top-2 right-2 text-gray-600 text-2xl" id="closeButton">&times;</button>
+        <iframe src="https://minesweeper.online/" frameborder="0" class="w-full h-full rounded-lg"></iframe>
+    </div>
+
+    <div id="section-title"
+        class="fixed top-16 left-1/2 transform -translate-x-1/2 text-lg font-bold bg-white p-2 rounded shadow-lg hidden">
+    </div>
+
+    <section id="about" class="section pt-24">
+        <div class="container mx-auto">
+            <div class="flex items-center justify-center gap-8 flex-wrap">
+                <div class="profile-photo">
+                    <img src="img/ava.png" alt="Фото профиля"
+                        class="w-36 h-36 rounded-full transition-transform transform hover:scale-110">
+                </div>
+                <div class="about-text text-left max-w-md">
+                    <h2 class="text-2xl mb-2">Привет, я Суслов Павел</h2>
+                    <p class="text-gray-600">Разработчик, который просто любит жить...</p>
+                    <h2 class="text-2xl mt-4 mb-2">Обо мне</h2>
+                    <p class="text-gray-600">My cognition of this world is so absolute as if I've been living a hundred
+                        of trillions of billions of years on trillions of planets like the Earth and I understand it
+                        from top to bottom and here...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section py-24">
+        <div class="container mx-auto">
+            <h2 class="text-2xl mb-6 text-center">Мои проекты</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div
+                    class="project bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
+                    <img src="img/bomberman.png" alt="Проект 1" class="w-full rounded-t-lg">
+                    <p class="p-4 text-center"> Проект Bomberman — видеоигра в жанре аркады</p>
+                </div>
+                <div
+                    class="project bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
+                    <img src="img/pizzaMobile.png" alt="Проект 2" class="w-full rounded-t-lg">
+                    <p class="p-4 text-center">Проект Pizza — групповой проект сайт в телеграмм боте</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="technologies" class="section py-24">
+        <div class="container mx-auto">
+            <h2 class="text-2xl mb-6 text-center">Технологии</h2>
+            <div class="flex flex-wrap justify-center gap-10">
+                <a href="https://developer.mozilla.org/docs/Web/HTML" target="_blank"
+                    class="technology flex flex-col items-center justify-center text-center w-36 h-44 bg-gray-200 rounded-lg shadow-md transition-transform transform hover:scale-105">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"
+                        class="w-20 h-20 mb-2">
+                    <p>HTML</p>
+                </a>
+                <a href="https://developer.mozilla.org/docs/Web/CSS" target="_blank"
+                    class="technology flex flex-col items-center justify-center text-center w-36 h-44 bg-gray-200 rounded-lg shadow-md transition-transform transform hover:scale-105">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"
+                        class="w-20 h-20 mb-2">
+                    <p>CSS</p>
+                </a>
+                <a href="https://nuxtjs.org/" target="_blank"
+                    class="technology flex flex-col items-center justify-center text-center w-36 h-44 bg-gray-200 rounded-lg shadow-md transition-transform transform hover:scale-105">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg"
+                        alt="Nuxt.js" class="w-20 h-20 mb-2">
+                    <p>Nuxt.js</p>
+                </a>
+                <a href="https://nodejs.org/" target="_blank"
+                    class="technology flex flex-col items-center justify-center text-center w-36 h-44 bg-gray-200 rounded-lg shadow-md transition-transform transform hover:scale-105">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                        alt="Node.js" class="w-20 h-20 mb-2">
+                    <p>Node.js</p>
+                </a>
+                <a href="https://www.python.org/" target="_blank"
+                    class="technology flex flex-col items-center justify-center text-center w-36 h-44 bg-gray-200 rounded-lg shadow-md transition-transform transform hover:scale-105">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                        alt="Python" class="w-20 h-20 mb-2">
+                    <p>Python</p>
+                </a>
+                <a href="https://github.com/" target="_blank"
+                    class="technology flex flex-col items-center justify-center text-center w-36 h-44 bg-gray-200 rounded-lg shadow-md transition-transform transform hover:scale-105">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                        alt="GitHub" class="w-20 h-20 mb-2">
+                    <p>GitHub</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="testimonials flex gap-4 justify-center p-6">
+        <div
+            class="testimonial-card bg-gray-100 rounded-lg shadow-md p-4 max-w-xs transition-transform transform hover:scale-105">
+            <img src="image1.jpg" alt="Person 1" class="profile-pic rounded-full w-12 h-12 float-left mr-2">
+            <h3 class="text-lg font-semibold">Potapov Artem</h3>
+            <p class="text-sm text-gray-600">Я был впечатлен уровнем профессионализма...</p>
+        </div>
+        <div
+            class="testimonial-card bg-gray-100 rounded-lg shadow-md p-4 max-w-xs transition-transform transform hover:scale-105">
+            <img src="image2.jpg" alt="Person 2" class="profile-pic rounded-full w-12 h-12 float-left mr-2">
+            <h3 class="text-lg font-semibold">Suslov Pavel</h3>
+            <p class="text-sm text-gray-600">Сотрудничество с этим специалистом было...</p>
+        </div>
+        <div
+            class="testimonial-card bg-gray-100 rounded-lg shadow-md p-4 max-w-xs transition-transform transform hover:scale-105">
+            <img src="image3.jpg" alt="Person 3" class="profile-pic rounded-full w-12 h-12 float-left mr-2">
+            <h3 class="text-lg font-semibold">Domrachev Artem</h3>
+            <p class="text-sm text-gray-600">Этот специалист продемонстрировал...</p>
+        </div>
+    </div>
+
+    <section id="contacts" class="section py-24">
+        <div class="container mx-auto">
+            <h2 class="text-2xl mb-6 text-center">Контакты</h2>
+            <div class="flex justify-center gap-6">
+                <a href="mailto:Pavel.suslow2018@yandex.ru"
+                    class="social-button email inline-flex items-center justify-center border-2 border-black rounded-full px-4 py-2 font-bold text-black transition-transform transform hover:bg-red-500 hover:border-red-500">Pavel.suslow2018@yandex.ru</a>
+                <a href="https://t.me/PAVLYCH_43"
+                    class="social-button telegram inline-flex items-center justify-center border-2 border-black rounded-full px-4 py-2 font-bold text-black transition-transform transform hover:bg-blue-500 hover:border-blue-500">Telegram</a>
+                <a href="https://vk.com/tvoy___fsb"
+                    class="social-button vk inline-flex items-center justify-center border-2 border-black rounded-full px-4 py-2 font-bold text-black transition-transform transform hover:bg-blue-600 hover:border-blue-600">VK</a>
+                <a href="https://github.com/"
+                    class="social-button github inline-flex items-center justify-center border-2 border-black rounded-full px-4 py-2 font-bold text-black transition-transform transform hover:bg-purple-600 hover:border-purple-600">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white p-4 text-center w-full">
+        <p>© 2024 Павел Суслов. Все права защищены.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    const sectionTitle = document.getElementById('section-title');
+                    if (entry.isIntersecting) {
+                        sectionTitle.textContent = entry.target.querySelector('h2').textContent;
+                        sectionTitle.style.display = 'block';
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.section').forEach(section => observer.observe(section));
+        });
+
+        const boredButton = document.getElementById('boredButton');
+        const gameModal = document.getElementById('gameModal');
+        const closeButton = document.getElementById('closeButton');
+
+        boredButton.addEventListener('click', () => {
+            gameModal.classList.remove('hidden');
+        });
+
+        closeButton.addEventListener('click', () => {
+            gameModal.classList.add('hidden');
+        });
+
+        window.addEventListener('click', (event) => {
+            if (event.target === gameModal) {
+                gameModal.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+
+</html>
