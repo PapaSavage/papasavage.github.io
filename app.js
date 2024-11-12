@@ -14,9 +14,6 @@ app.get('/artem', (req, res) => {
 app.get('/pasha', (req, res) => {
     res.sendfile('public/pasha.html');
 })
-app.get('/pasha1', (req, res) => {
-    res.sendfile('public/pasha1.html');
-})
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
