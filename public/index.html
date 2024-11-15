@@ -1,46 +1,39 @@
 <!doctype html>
 <html>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-            rel="stylesheet">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap"
-            rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
 
-        <script src="https://cdn.tailwindcss.com"></script>
-    </head>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
 
-    <body>
-        <div class="mx-auto max-w-[768px] xl:max-w-[1366px]">
-            <div class="h-screen flex flex-col justify-around">
-                <div
-                    class="hidden font-semibold py-2 sm:flex w-full flex-row justify-center items-center gap-[42px] text-[16px] xl:text-[24px] ">
-                    <a href="#skills">Skills</a>
-                    <a href="#projects">Latest work</a>
-                    <a href="#reviews">Reviews</a>
-                    <a href="#about">About me</a>
-                    <a href="#contact">Contact me</a>
-                </div>
-                <div
-                    class=" flex flex-col justify-center items-center my-3 sm:my-0">
-                    <div
-                        class="flex flex-col xl:flex-row items-center gap-[32px] xl:gap-[65px]">
-                        <img class="h-48 xl:h-64 easy-in-out"
-                            src="img/mainphoto.png" alt>
-                        <div class="flex flex-col gap-4">
-                            <div
-                                class="flex flex-col text-center xl:text-start">
-                                <div class="text-[24px] xl:text-[40px]">Данил
-                                    Фалалеев</div>
-                                <div
-                                    class="font-bold text-[24px] xl:text-[40px] text-poppins">Fullstack
-                                    Developer</div>
-                            </div>
-                            <!-- <button href="#contact"
+<body>
+    <div class="mx-auto max-w-[768px] xl:max-w-[1366px]">
+        <div class="h-screen flex flex-col justify-around">
+            <div
+                class="hidden font-semibold py-2 sm:flex w-full flex-row justify-center items-center gap-[42px] text-[16px] xl:text-[24px] ">
+                <a href="#skills">Skills</a>
+                <a href="#projects">Latest work</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#about">About me</a>
+                <a href="#contact">Contact me</a>
+            </div>
+            <div class=" flex flex-col justify-center items-center my-3 sm:my-0">
+                <div class="flex flex-col xl:flex-row items-center gap-[32px] xl:gap-[65px]">
+                    <img class="h-48 xl:h-64 easy-in-out" src="img/mainphoto.png" alt>
+                    <div class="flex flex-col gap-4">
+                        <div class="flex flex-col text-center xl:text-start">
+                            <div class="text-[24px] xl:text-[40px]">Данил
+                                Фалалеев</div>
+                            <div class="font-bold text-[24px] xl:text-[40px] text-poppins">Fullstack
+                                Developer</div>
+                        </div>
+                        <!-- <button href="#contact"
                                 class=" px-[64px] text-white bg-black py-[4px]
                                 xl:py-[8px] rounded-[50px] text-[20px] font-bold
                                 xl:self-end hover:text-black
@@ -49,228 +42,211 @@
                                 justify-center items-center shadow-2xl
                                 easy-in-out">Заказать
                                 сайт</button> -->
-                        </div>
                     </div>
                 </div>
-                <div>
-                    <div id="skills"
-                        class="py-[24px] text-center text-[40px] font-bold sticky top-0 overflow-hidden z-10 backdrop-blur-md">SKILLS</div>
+            </div>
+            <div>
+                <div id="skills"
+                    class="py-[24px] text-center text-[40px] font-bold sticky top-0 overflow-hidden z-10 backdrop-blur-md">
+                    SKILLS</div>
+                <div class="max-w-[1000px] mx-auto grid grid-cols-3 xl:grid-cols-5 grid-rows-2 gap-[24px] px-10">
                     <div
-                        class="max-w-[1000px] mx-auto grid grid-cols-3 xl:grid-cols-5 grid-rows-2 gap-[24px] px-10">
-                        <div
-                            class="py-3 rounded-[10px] hidden xl:flex flex-col justify-center items-center shadow-2xl hover:border-transparent hover:bg-[#F2F2F2] transition duration-300 cursor-pointer easy-in-out">
-                            <img class="w-[75px] h-[75px]" src="img/html.png">
-                            <div class="font-bold text-[20px]">HTML</div>
-                        </div>
-                        <div
-                            class="py-3 rounded-[10px] flex flex-col justify-center items-center shadow-2xl hover:border-transparent hover:bg-[#F2F2F2] transition duration-300 cursor-pointer easy-in-out">
-                            <img class="w-[75px] h-[75px]" src="img/nuxt.png">
-                            <div class="font-bold text-[20px]">NUXT</div>
-                        </div>
-                        <div
-                            class="py-3 rounded-[10px] flex flex-col justify-center items-center shadow-2xl hover:border-transparent hover:bg-[#F2F2F2] transition duration-300 cursor-pointer easy-in-out">
-                            <img class="w-[75px] h-[75px]" src="img/php.png">
-                            <div class="font-bold text-[20px]">PHP</div>
-                        </div>
-                        <div
-                            class="py-3 rounded-[10px] flex flex-col justify-center items-center shadow-2xl hover:border-transparent hover:bg-[#F2F2F2] transition duration-300 cursor-pointer easy-in-out">
-                            <img class="w-[75px] h-[75px]" src="img/vue.png">
-                            <div class="font-bold text-[20px]">VUE</div>
-                        </div>
-                        <div
-                            class="py-3 rounded-[10px] flex flex-col justify-center items-center shadow-2xl hover:border-transparent hover:bg-[#F2F2F2] transition duration-300 cursor-pointer easy-in-out">
-                            <img class="w-[75px] h-[75px]" src="img/github.png">
-                            <div class="font-bold text-[20px]">GITHUB</div>
-                        </div>
-                        <div
-                            class="py-3 rounded-[10px] flex flex-col justify-center items-center shadow-2xl hover:border-transparent hover:bg-[#F2F2F2] transition duration-300 cursor-pointer easy-in-out">
-                            <img class="w-[75px] h-[75px]" src="img/css.png">
-                            <div class="font-bold text-[20px]">CSS</div>
-                        </div>
-                        <div
-                            class="py-3 rounded-[10px] flex flex-col justify-center items-center shadow-2xl hover:border-transparent hover:bg-[#F2F2F2] transition duration-300 cursor-pointer easy-in-out">
-                            <img class="w-[75px] h-[75px]"
-                                src="img/bootstrap.png">
-                            <div class="font-bold text-[20px]">BOOTSTRAP</div>
-                        </div>
-                        <div
-                            class="py-3 rounded-[10px] flex flex-col justify-center items-center shadow-2xl hover:border-transparent hover:bg-[#F2F2F2] transition duration-300 cursor-pointer easy-in-out">
-                            <img class="w-[75px] h-[75px]"
-                                src="img/javascript.png">
-                            <div class="font-bold text-[20px]">JS</div>
-                        </div>
-                        <div
-                            class="py-3 rounded-[10px] flex flex-col justify-center items-center shadow-2xl hover:border-transparent hover:bg-[#F2F2F2] transition duration-300 cursor-pointer easy-in-out">
-                            <img class="w-[75px] h-[75px]" src="img/nodejs.png">
-                            <div class="font-bold text-[20px]">NODEJS</div>
-                        </div>
-                        <div
-                            class="py-3 rounded-[10px] flex flex-col justify-center items-center shadow-2xl hover:border-transparent hover:bg-[#F2F2F2] transition duration-300 cursor-pointer easy-in-out">
-                            <img class="w-[75px] h-[75px]" src="img/python.png">
-                            <div class="font-bold text-[20px]">PYTHON</div>
-                        </div>
+                        class="py-3 rounded-[10px] hidden xl:flex flex-col justify-center items-center shadow-2xl hover:border-transparent hover:bg-[#F2F2F2] transition duration-300 cursor-pointer easy-in-out">
+                        <img class="w-[75px] h-[75px]" src="img/html.png">
+                        <div class="font-bold text-[20px]">HTML</div>
+                    </div>
+                    <div
+                        class="py-3 rounded-[10px] flex flex-col justify-center items-center shadow-2xl hover:border-transparent hover:bg-[#F2F2F2] transition duration-300 cursor-pointer easy-in-out">
+                        <img class="w-[75px] h-[75px]" src="img/nuxt.png">
+                        <div class="font-bold text-[20px]">NUXT</div>
+                    </div>
+                    <div
+                        class="py-3 rounded-[10px] flex flex-col justify-center items-center shadow-2xl hover:border-transparent hover:bg-[#F2F2F2] transition duration-300 cursor-pointer easy-in-out">
+                        <img class="w-[75px] h-[75px]" src="img/php.png">
+                        <div class="font-bold text-[20px]">PHP</div>
+                    </div>
+                    <div
+                        class="py-3 rounded-[10px] flex flex-col justify-center items-center shadow-2xl hover:border-transparent hover:bg-[#F2F2F2] transition duration-300 cursor-pointer easy-in-out">
+                        <img class="w-[75px] h-[75px]" src="img/vue.png">
+                        <div class="font-bold text-[20px]">VUE</div>
+                    </div>
+                    <div
+                        class="py-3 rounded-[10px] flex flex-col justify-center items-center shadow-2xl hover:border-transparent hover:bg-[#F2F2F2] transition duration-300 cursor-pointer easy-in-out">
+                        <img class="w-[75px] h-[75px]" src="img/github.png">
+                        <div class="font-bold text-[20px]">GITHUB</div>
+                    </div>
+                    <div
+                        class="py-3 rounded-[10px] flex flex-col justify-center items-center shadow-2xl hover:border-transparent hover:bg-[#F2F2F2] transition duration-300 cursor-pointer easy-in-out">
+                        <img class="w-[75px] h-[75px]" src="img/css.png">
+                        <div class="font-bold text-[20px]">CSS</div>
+                    </div>
+                    <div
+                        class="py-3 rounded-[10px] flex flex-col justify-center items-center shadow-2xl hover:border-transparent hover:bg-[#F2F2F2] transition duration-300 cursor-pointer easy-in-out">
+                        <img class="w-[75px] h-[75px]" src="img/bootstrap.png">
+                        <div class="font-bold text-[20px]">BOOTSTRAP</div>
+                    </div>
+                    <div
+                        class="py-3 rounded-[10px] flex flex-col justify-center items-center shadow-2xl hover:border-transparent hover:bg-[#F2F2F2] transition duration-300 cursor-pointer easy-in-out">
+                        <img class="w-[75px] h-[75px]" src="img/javascript.png">
+                        <div class="font-bold text-[20px]">JS</div>
+                    </div>
+                    <div
+                        class="py-3 rounded-[10px] flex flex-col justify-center items-center shadow-2xl hover:border-transparent hover:bg-[#F2F2F2] transition duration-300 cursor-pointer easy-in-out">
+                        <img class="w-[75px] h-[75px]" src="img/nodejs.png">
+                        <div class="font-bold text-[20px]">NODEJS</div>
+                    </div>
+                    <div
+                        class="py-3 rounded-[10px] flex flex-col justify-center items-center shadow-2xl hover:border-transparent hover:bg-[#F2F2F2] transition duration-300 cursor-pointer easy-in-out">
+                        <img class="w-[75px] h-[75px]" src="img/python.png">
+                        <div class="font-bold text-[20px]">PYTHON</div>
+                    </div>
 
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col ">
+            <div id="projects"
+                class="py-[24px] my-[36px] text-[40px] text-center font-bold sticky top-0 overflow-hidden z-10 backdrop-blur-md">
+                LATEST
+                WORK</div>
+            <div class="flex flex-col gap-[32px] relative pb-6">
+                <a href="https://github.com/PapaSavage/gym" target="_blank"
+                    class="flex-1 flex flex-col justify-center items-center mx-4 sm:mx-0 easy-in-out sticky top-0">
+                    <div class=" flex flex-col shadow-2xl rounded-[20px]">
+                        <div
+                            class="px-[30px] py-[15px] bg-[#353535] text-[40px] font-bold uppercase text-white rounded-t-[20px]">
+                            gym</div>
+                        <img class="xl:max-w-screen-lg rounded-[20px] " src="img/gym.png" alt>
                     </div>
-                </div>
-            </div>
-            <div class="flex flex-col ">
-                <div id="projects"
-                    class="py-[24px] my-[36px] text-[40px] text-center font-bold sticky top-0 overflow-hidden z-10 backdrop-blur-md">LATEST
-                    WORK</div>
-                <div class="flex flex-col gap-[32px] relative pb-6">
-                    <a href="https://github.com/PapaSavage/gym" target="_blank"
-                        class="flex-1 flex flex-col justify-center items-center mx-4 sm:mx-0 easy-in-out sticky top-0">
-                        <div class=" flex flex-col shadow-2xl rounded-[20px]">
-                            <div
-                                class="px-[30px] py-[15px] bg-[#353535] text-[40px] font-bold uppercase text-white rounded-t-[20px]">
-                                gym</div>
-                            <img
-                                class="xl:max-w-screen-lg rounded-[20px] "
-                                src="img/gym.png" alt>
-                        </div>
-                    </a>
-                    <a href="https://github.com/PapaSavage/gym" target="_blank"
-                        class="flex-1 flex flex-col justify-center items-center mx-4 sm:mx-0 easy-in-out sticky top-0">
-                        <div class=" flex flex-col shadow-2xl rounded-[20px]">
-                            <div
-                                class="px-[30px] py-[15px] bg-[#353535] text-[40px] font-bold uppercase text-white rounded-t-[20px]">
-                                pizza</div>
-                            <img
-                                class="xl:max-w-screen-lg rounded-[20px] "
-                                src="img/pizza.png" alt>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="flex flex-col h-full">
-                <div id="reviews"
-                    class="py-[24px] my-[36px] text-[40px] text-center font-bold sticky top-0 overflow-hidden z-10 backdrop-blur-md">REVIEWS</div>
-                <div id="reviews-container"
-                    class="flex-1 flex justify-center items-center px-[20px] xl:px-[60px]">
-                    <div
-                        class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-[16px] justify-items-center w-full">
-                        <!-- Reviews will be populated here -->
+                </a>
+                <a href="https://github.com/PapaSavage/gym" target="_blank"
+                    class="flex-1 flex flex-col justify-center items-center mx-4 sm:mx-0 easy-in-out sticky top-0">
+                    <div class=" flex flex-col shadow-2xl rounded-[20px]">
+                        <div
+                            class="px-[30px] py-[15px] bg-[#353535] text-[40px] font-bold uppercase text-white rounded-t-[20px]">
+                            pizza</div>
+                        <img class="xl:max-w-screen-lg rounded-[20px] " src="img/pizza.png" alt>
                     </div>
+                </a>
+            </div>
+        </div>
+        <div class="flex flex-col h-full">
+            <div id="reviews"
+                class="py-[24px] my-[36px] text-[40px] text-center font-bold sticky top-0 overflow-hidden z-10 backdrop-blur-md">
+                REVIEWS</div>
+            <div id="reviews-container" class="flex-1 flex justify-center items-center px-[20px] xl:px-[60px]">
+                <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-[16px] justify-items-center w-full">
+                    <!-- Reviews will be populated here -->
                 </div>
             </div>
-            <div class="flex flex-col h-full">
-                <div id="about"
-                    class="py-[24px] my-[36px] text-[40px] text-center font-bold sticky top-0 overflow-hidden z-10 backdrop-blur-md">ABOUT
-                    ME</div>
-                <div class="flex-1 px-[20px] sm:px-[60px] xl:px-[177px]">
-                    <div
-                        class="flex flex-col xl:flex-row items-center gap-[16px]">
-                        <img class="easy-in-out xl:px-0"
-                            src="img/PROFILEabout.png" alt>
-                        <div class="flex flex-col w-full gap-[16px]">
-                            <div class="flex flex-row gap-[16px] w-full ">
-                                <div
-                                    class="flex flex-col justify-center items-center py-[28px] gap-[15px] w-full transition duration-300 rounded-[12px] bg-black/5 border hover:bg-black/10 hover:shadow-2xl easy-in-out">
-                                    <div class="flex flex-col items-center ">
-                                        <img class="h-[32px] w-[32px]"
-                                            src="img/reward.png" alt>
-                                        <div
-                                            class="text-[20px] font-semibold"
-                                            ">Опыт</div>
+        </div>
+        <div class="flex flex-col h-full">
+            <div id="about"
+                class="py-[24px] my-[36px] text-[40px] text-center font-bold sticky top-0 overflow-hidden z-10 backdrop-blur-md">
+                ABOUT
+                ME</div>
+            <div class="flex-1 px-[20px] sm:px-[60px] xl:px-[177px]">
+                <div class="flex flex-col xl:flex-row items-center gap-[16px]">
+                    <img class="easy-in-out xl:px-0" src="img/PROFILEabout.png" alt>
+                    <div class="flex flex-col w-full gap-[16px]">
+                        <div class="flex flex-row gap-[16px] w-full ">
+                            <div
+                                class="flex flex-col justify-center items-center py-[28px] gap-[15px] w-full transition duration-300 rounded-[12px] bg-black/5 border hover:bg-black/10 hover:shadow-2xl easy-in-out">
+                                <div class="flex flex-col items-center ">
+                                    <img class="h-[32px] w-[32px]" src="img/reward.png" alt>
+                                    <div class="text-[20px] font-semibold" ">Опыт</div>
                                         <div class>2+
                                             years</div>
                                         <div
-                                            class="text-center">FullStack
-                                            development</div>
-                                    </div>
-
+                                            class=" text-center">FullStack
+                                        development</div>
                                 </div>
-                                <div
-                                    class=" flex flex-col justify-center items-center py-[28px] gap-[15px] w-full
+
+                            </div>
+                            <div class=" flex flex-col justify-center items-center py-[28px] gap-[15px] w-full
                                         transition duration-300 rounded-[12px] bg-black/5 border hover:bg-black/10
                                         hover:shadow-2xl easy-in-out">
-                                    <div class="flex flex-col items-center ">
-                                        <img class="h-[32px] w-[32px]"
-                                            src="img/peoples.png" alt>
-                                        <div
-                                            class="text-[20px] font-semibold">Обучение</div>
-                                        <div class="text-center">Колледж
-                                            ВятГУ</div>
-                                    </div>
-
+                                <div class="flex flex-col items-center ">
+                                    <img class="h-[32px] w-[32px]" src="img/peoples.png" alt>
+                                    <div class="text-[20px] font-semibold">Обучение</div>
+                                    <div class="text-center">Колледж
+                                        ВятГУ</div>
                                 </div>
+
                             </div>
-                            <div
-                                class="text-black xl:text-start p-7 transition duration-300 rounded-[12px] bg-black/5 border hover:bg-black/10 hover:shadow-2xl easy-in-out">
-                                Lorem
-                                ipsum
-                                dolor sit
-                                amet
-                                consectetur
-                                adipisicing elit . Hic quis reprehenderit et
-                                laborum, rem, dolore eum quod voluptate
-                                exercitationem nobis, nihil esse debitis maxime
-                                facere minus sint delectus velit in eos quo
-                                officiis explicabo deleniti dignissimos.
-                                Eligendi illum libero dolorum cum laboriosam
-                                corrupti quidem, reiciendis ea magnam? Nulla,
-                                impedit fuga!</div>
                         </div>
+                        <div
+                            class="text-black xl:text-start p-7 transition duration-300 rounded-[12px] bg-black/5 border hover:bg-black/10 hover:shadow-2xl easy-in-out">
+                            Привет! Меня зовут Данил, и я — Fullstack разработчик с двухлетним опытом работы в
+                            веб-разработке. За это время я
+                            реализовал несколько проектов, охватывающих как фронтенд, так и бэкенд, что позволяет мне
+                            эффективно решать задачи с
+                            разных сторон. Я владею такими технологиями, как HTML, CSS, JavaScript, а также различными
+                            фреймворками и библиотеками,
+                            включая React и Node.js. Моя цель — создавать интуитивно понятные и высокопроизводительные
+                            приложения, которые
+                            удовлетворяют потребности пользователей. Буду рад обсудить возможности сотрудничества и
+                            реализовать интересные проекты
+                            вместе!</div>
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col h-full my-[40px]">
-                <div id="contact"
-                    class="py-[24px] my-[36px] text-[40px] text-center font-bold sticky top-0 overflow-hidden z-10 backdrop-blur-md">Looking
-                    for a Web Developer?</div>
-                <div
-                    class="flex flex-row flex-wrap justify-center gap-[10px] text-[22px] font-bold">
-                    <a href="https://t.me/DanilFalaleev" target="_blank"
-                        class="easy-in-out shadow-2xl transition duration-300 rounded-[50px] py-[12px] px-[25px] border-2 border-black hover:text-white hover:border-transparent hover:bg-[#039BE5]">telegram</a>
-                    <a href="https://vk.com/unbbelievable" target="_blank"
-                        class="easy-in-out shadow-2xl transition duration-300 rounded-[50px] py-[12px] px-[25px] border-2 border-black hover:text-white hover:border-transparent hover:bg-[#2787F5]">vk</a>
-                    <a
-                        href="https://kirov.hh.ru/resume/e409eaddff0d7ffb910039ed1f616c66524a4c"
-                        target="_blank"
-                        class="easy-in-out shadow-2xl transition duration-300 rounded-[50px] py-[12px] px-[25px] border-2 border-black hover:text-white hover:border-transparent hover:bg-[#D6001C] ">hh.ru</a>
-                    <a href="https://github.com/PapaSavage" target="_blank"
-                        class="easy-in-out shadow-2xl transition duration-300 rounded-[50px] py-[12px] px-[25px] border-2 border-black hover:text-white hover:border-transparent hover:bg-black">github</a>
-                </div>
-            </div>
-
         </div>
-        <script>
-    fetch('http://45.153.189.82:8000/reviews')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`Response status: ${response.status}`);
-            }
-            return response.json();
-        })
-        .then(data => {
-            const reviewsContainer = document.querySelector('#reviews-container'); // Container for reviews
-            const reviewsGrid = reviewsContainer.querySelector('.grid'); // Grid inside the container
+        <div class="flex flex-col h-full my-[40px]">
+            <div id="contact"
+                class="py-[24px] my-[36px] text-[40px] text-center font-bold sticky top-0 overflow-hidden z-10 backdrop-blur-md">
+                Looking
+                for a Web Developer?</div>
+            <div class="flex flex-row flex-wrap justify-center gap-[10px] text-[22px] font-bold">
+                <a href="https://t.me/DanilFalaleev" target="_blank"
+                    class="easy-in-out shadow-2xl transition duration-300 rounded-[50px] py-[12px] px-[25px] border-2 border-black hover:text-white hover:border-transparent hover:bg-[#039BE5]">telegram</a>
+                <a href="https://vk.com/unbbelievable" target="_blank"
+                    class="easy-in-out shadow-2xl transition duration-300 rounded-[50px] py-[12px] px-[25px] border-2 border-black hover:text-white hover:border-transparent hover:bg-[#2787F5]">vk</a>
+                <a href="https://kirov.hh.ru/resume/e409eaddff0d7ffb910039ed1f616c66524a4c" target="_blank"
+                    class="easy-in-out shadow-2xl transition duration-300 rounded-[50px] py-[12px] px-[25px] border-2 border-black hover:text-white hover:border-transparent hover:bg-[#D6001C] ">hh.ru</a>
+                <a href="https://github.com/PapaSavage" target="_blank"
+                    class="easy-in-out shadow-2xl transition duration-300 rounded-[50px] py-[12px] px-[25px] border-2 border-black hover:text-white hover:border-transparent hover:bg-black">github</a>
+            </div>
+        </div>
 
-            // Clear the container before adding new reviews
-            reviewsGrid.innerHTML = '';
+    </div>
+    <script>
+        fetch('http://45.153.189.82:8000/reviews')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Response status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                const reviewsContainer = document.querySelector('#reviews-container'); // Container for reviews
+                const reviewsGrid = reviewsContainer.querySelector('.grid'); // Grid inside the container
 
-            for (i=0; i< 1; i++) {
-                data.results.forEach(review => {
-                    const reviewElement = document.createElement('div');
-                    reviewElement.classList.add('easy-in-out', 'p-[2px]', 'sm:p-[15px]', 'flex', 'flex-col', 'text-wrap', 'duration-300', 'transition', 'rounded-[12px]', 'bg-black/5', 'border', 'hover:bg-black/10', 'hover:shadow-2xl');
-    
-                    reviewElement.innerHTML = `
+                // Clear the container before adding new reviews
+                reviewsGrid.innerHTML = '';
+
+                for (i = 0; i < 1; i++) {
+                    data.results.forEach(review => {
+                        const reviewElement = document.createElement('div');
+                        reviewElement.classList.add('easy-in-out', 'p-[2px]', 'sm:p-[15px]', 'flex', 'flex-col', 'text-wrap', 'duration-300', 'transition', 'rounded-[12px]', 'bg-black/5', 'border', 'hover:bg-black/10', 'hover:shadow-2xl');
+
+                        reviewElement.innerHTML = `
                         <div class="flex flex-row gap-[15px] items-center px-[10px] pt-[10px] sm:p-0">
                             <img class="w-[48px] h-[48px] rounded-full" src="${review.photo_path}" alt="Review photo">
                             <div class="text-[18px] xl:text-[24px] font-semibold">${review.author_name}</div>
                         </div>
                         <div class="text-[14px] xl:text-ellipsis m-3">${review.description}</div>
                     `;
-    
-                    reviewsGrid.appendChild(reviewElement);
-                });
-            }
 
-        })
-        .catch(error => console.error('Error:', error));
-</script>
+                        reviewsGrid.appendChild(reviewElement);
+                    });
+                }
 
-    </body>
+            })
+            .catch(error => console.error('Error:', error));
+    </script>
+
+</body>
 
 </html>
 
@@ -306,5 +282,5 @@
     .easy-in-out:hover {
         transform: scale(1.03);
         /* Increase the size by 20% on hover */
-    }   
+    }
 </style>
