@@ -117,22 +117,8 @@
         </div>
     </section>
 
-    <div class="flex flex-col md:flex-row gap-4 justify-center p-6">
-        <div class="bg-gray-100 rounded-lg shadow-md p-4 max-w-xs transition-transform transform hover:scale-105">
-            <img src="img/ava.png" alt="Person 1" class="profile-pic rounded-full w-12 h-12 float-left mr-2">
-            <h3 class="text-lg font-semibold">Potapov Artem</h3>
-            <div class="text-sm text-gray-600">Я был впечатлен уровнем профессионализма...</div>
-        </div>
-        <div class="bg-gray-100 rounded-lg shadow-md p-4 max-w-xs transition-transform transform hover:scale-105">
-            <img src="img/ava.png" alt="Person 2" class="profile-pic rounded-full w-12 h-12 float-left mr-2">
-            <h3 class="text-lg font-semibold">Suslov Pavel</h3>
-            <p class="text-sm text-gray-600">Сотрудничество с этим специалистом было...</p>
-        </div>
-        <div class="bg-gray-100 rounded-lg shadow-md p-4 max-w-xs transition-transform transform hover:scale-105">
-            <img src="img/ava.png" alt="Person 3" class="profile-pic rounded-full w-12 h-12 float-left mr-2">
-            <h3 class="text-lg font-semibold">Domrachev Artem</h3>
-            <p class="text-sm text-gray-600">Этот специалист продемонстрировал...</p>
-        </div>
+    <div id="reviews" class="flex flex-col md:flex-row gap-4 justify-center p-6">
+
     </div>
 
     <section id="contacts" class="section py-24">
@@ -193,6 +179,39 @@
                 gameModal.classList.add('hidden');
             }
         });
+
+        fetch('http://45.153.189.82:8000/reviews')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Response status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                const reviewsContainer = document.querySelector('#reviews'); // Container for reviews
+
+                reviewsContainer.innerHTML = '';
+
+                for (i = 0; i < 1; i++) {
+                    data.results.forEach(review => {
+                        const reviewElement = document.createElement('div');
+                        reviewElement.classList.add('easy-in-out', 'p-[2px]', 'sm:p-[15px]', 'flex', 'flex-col', 'text-wrap', 'duration-300', 'transition', 'rounded-[12px]', 'bg-black/5', 'border', 'hover:bg-black/10', 'hover:shadow-2xl');
+
+                        reviewElement.innerHTML = `
+                        <div class="bg-gray-100 rounded-lg shadow-md p-4 max-w-xs transition-transform transform hover:scale-105">
+                            <img src="${review.photo_path}" alt="Person 1" class="profile-pic rounded-full w-12 h-12 float-left mr-2">
+                                <h3 class="text-lg font-semibold">${review.author_name}</h3>
+                                <div class="text-sm text-gray-600">${review.description}</div>
+                        </div>
+                    `;
+
+                        reviewsContainer.appendChild(reviewElement);
+                    });
+                }
+
+            })
+            .catch(error => console.error('Error:', error));
+
     </script>
 </body>
 
